@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script>
+	function formatacnpj (cnpj){
+ 		var contador=0 
+ 		var cnpjFormatado= ''
+ 
+ 		if (cnpj.length!==14){   
+    			 return 'não é um cnpj'     
+ 		}
+ 
+ 		for (var num of cnpj) {
+    			cnpjFormatado = cnpjFormatado + num 
+   			if (contador===1 || contador===4 ) {
+      				 cnpjFormatado= cnpjFormatado +'.'  
+   			 }
+    			 if (contador===7 ) {
+     				  cnpjFormatado= cnpjFormatado +'/'  
+   			 }
+    
+   	 		 if (contador===11 ) {
+       				cnpjFormatado= cnpjFormatado +'-'  
+   			 }
+     			contador++
+		 }
+		return cnpjFormatado
+
+	 }
+	 
+         function formatacpf (cpf){
+ 		var contador=0 
+ 		var cpfFormatado= ''
+ 
+ 		if (cpf.length!==11){   
+    			 return 'não é um cpf'     
+ 		}
+ 
+ 		for (var num of cpf) {
+    			cpfFormatado = cpfFormatado + num 
+   			if (contador===2 || contador===5 ) {
+      				 cpfFormatado= cpfFormatado +'.'  
+   			 }
+    			 if (contador===8 ) {
+     				  cpfFormatado= cpfFormatado +'-'  
+   			 }
+    
+     			contador++
+		 }
+		return cpfFormatado
+
+	 }
+	 console.log(formatacpf('23456789023'))
+     console.log(formatacpf('10769356000148'))
+
+     console.log(formatacnpj('07291141'))
+         console.log(formatacnpj('10769356000148'))
+</script>
+   
+  </head>
+
+
+  <body>
+
+   'hello'
+   
+  </body>
+
+
+
+</html>
+
+ 
+ 
+
+ 
+  
+ 
+
