@@ -1,0 +1,65 @@
+                                         Function 
+
+function escreverMenssagem(){              //declara a função
+ console.log ('Hello');                           //quando chama a funçao este código é execcutado                  
+}
+escreverMenssagem()                              //chama a função
+
+-----------------------------------------------------------------------------------------------------------------
+
+function escreverMenssagem(mensagem){        // declara a função          
+ console.log (mensagem);                     // no console diz qual função quer ser excutada, no caso a msg (que está sem parâmetro)                  
+}
+escreverMenssagem('hello')                  // chama  a função colocando o parâmetro.
+escreverMenssagem('oi')
+
+-----------------------------------------------------------------------------------------------------------------
+function multiplica (x,y) {         //declara função
+  return x * y                      //o return é a operação na qual será excutada
+}
+
+console.log (multiplica(2,5))      // chama com parâmetro
+
+------------------------------------------------------------------------------------------------------------------
+
+function somaTudo(numeros) {     //declarafunçao 
+  var total = 0;
+
+  for(var num of numeros){       //usa laço for off para que número sempre seja soma ao próximo numero do array
+    total = total + num          // total se inicio em 0, no indice 1, que é o 1, soma a 1, no inc. 2, soma a 3
+ }
+    return total;               // retorna o valor que var total que quer ser exucutada
+}
+
+var NumerosArray= [1, 3, 2, 5, 6, 8, 9];  //cria um array
+var resultado = somaTudo (NumerosArray);  // uma var incluindo o array dentro da função
+console.log (resultado);                 // chama a função
+
+obs: para imprimir o array completo é colocar console.log(num) no lugar de total = total + num, e tirar return.
+
+----------------------------------------------------------------------------------------------------------------------
+                    Função autoexecutável
+
+(function escrever () {    //declara e dentra das {} coloca console.logo para executar o que deseja, após coloca(),
+    console.log('oi')     // porém se chamar assim não dará certo, pq precisa proteger, e pode fazer isso com () na função.
+} ())                     // aí excutará
+
+-------------------------------------------------------------------------------------------------------------------------
+                           função anônima dentro de variável
+
+var soma = function (a,b) {
+    return a + b                
+}
+
+console.log(soma(2,4))   //a variavel é chamada com função pois contém um função nela
+
+-------------------------------------------------------------------------------------------------------------------------
+                                        função dentro de função
+
+function somacallback (a, b, fncallback) {     
+    return fncallback (a + b);                     //retorna a + b dentro da função fncallback
+}
+
+console.log (somacallback (10, 3, function (total) {  // passa como parâmetro os valores e a função total contente o resultado
+    return total * 2;                                // e retorna esse resultado multiplicado por 2
+})); 

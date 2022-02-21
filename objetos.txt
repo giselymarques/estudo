@@ -1,0 +1,17 @@
+                       obejtos
+var usuario = {  
+    nome: 'Maria',                  // chaves, compostas de valores 
+    idade: 13,
+    linguagens: ['ingles', 'espanhol', 'português']   // pode ser passado array dentro de objetos
+}
+
+console.log (usuario);           
+
+
+var usuario ={
+  digaoi: function (meng) {
+    return 'oi'
+  }
+}
+
+console.log(usuario.digaoi())

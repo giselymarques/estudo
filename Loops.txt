@@ -1,0 +1,55 @@
+
+Laço While
+
+var contador= 0;            // declara a variação 
+while (contador < 5)        // o laço dentro a condição contador < 5 que será verdadeiro pois a var é 0, entrão irá imprimir
+{ console.log ('contador'); // está chamando a var contador
+  ++contador;               // está incrementando mais um, neste momento a var será 1, na próxima impressão 2, e parará 
+}                              quando da condição for falsa, no caso contador ser igual ou maior que 5
+
+-------------------------------------------------------------------------------------------------------------------------
+
+var contador= 0;           
+while (contador < 5) { 
+if (contador==3)              // if está dando condição para quando for igual 3, parar, isso vai faz fazer
+{ break;                            com q imprima 3 vezes apenas
+}
+console.log ('contador'); 
+  ++contador;               
+}      
+
+---------------------------------------------------------------------------------------------------------------------     
+
+IMPRIMIR OS DIVISORES DE 3 COM NOME PING, OS DE 5 COM O NOME PONG E QUANDO FOR DIVISOR DE AMBOS COM O NOME PING PONG
+
+var contador=0                -> declara a variável 
+while (contador <100) {
+  if (contador %3===0 && contador %5===0) {    // nesse if ele pede os o numeros que divididos por 3 e 5 retornem 0
+    console.log(contador + ' PING PONG');     // caso a condição anterior aconteça. imprimir ping pong
+  } else if (contador %3===0) {              // caso o numero não seja dividor de 3 e 5, mas for de 3
+    console.log (contador + ' PING');         //  caso a condição anterior aconteça. imprimir ping 
+  } else if (contador %5===0) {               //caso o numero não seja dividor de 3 e 5, mas for de 5
+    console.log (contador + ' pong');        //  caso a condição anterior aconteça. imprimir pong 
+  }
+    ++contador  (incrementa mais um)      (estão concatenados para que saia o número em a seguida string)
+}   
+
+------------------------------------------------------------------------------------------------------------------------ 
+
+var numerosaleatorios = [1,5,6,4,8,9,10];       // declara a variável contendo o array 
+for (var contador= 0; contador < numerosaleatorios.length; contador++) { // contador menor que comprimento da array, por isso usa-se length 
+var valor= numerosaleatorios[contador];       //cria-se variavel valor contendo o array
+var cont= contador;                           // cont contente contador
+console.log ( 'indice ' + cont + ' = ' + valor); // no console.log é concatenado cont e valor à estrings para não somar
+
+}         
+
+----------------------------------------------------------------------------------------------------------------------
+
+For of 
+
+var numerosaleatorios = [1,5,6,4,8,9,10];      // array    
+for (var num of numerosaleatorios) {          // o valor da posição é armazenado na var num
+console.log (num);                            
+
+}  

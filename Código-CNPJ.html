@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script> var numCNPJ= '07291880000141';
+var formatarCNPJ= ''
+var contador=0
+ for (var num of numCNPJ) {
+    formatarCNPJ = formatarCNPJ + num 
+   
+    if (contador===1 || contador===4 ) {
+       formatarCNPJ= formatarCNPJ +'.'  
+    }
+     if (contador===7 ) {
+       formatarCNPJ= formatarCNPJ +'/'  
+    }
+    
+     if (contador===11 ) {
+       formatarCNPJ= formatarCNPJ +'-'  
+    }
+     contador++
+ }
+ 
+ console.log(formatarCNPJ)
+
+
+   </script>
+   
+  </head>
+  <body>
+   
+  </body>
+
+
+
+</html>
