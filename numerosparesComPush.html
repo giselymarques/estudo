@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script> 
+	
+ 
+	function somarpares (array){
+        
+        var contador=0
+		var somapares= 0 
+		  
+		while (contador< array.length) {         
+			var num= array[contador]
+			if ( num %2===0) { 
+				somapares=num+somapares
+			}
+			contador++  
+	    	} 
+	    	return somapares
+	}  
+	
+	var array= [1, 2, 3, 4, 5, 6] 
+	
+	console.log (somarpares(array))
+	
+	array.push(10,12,13)
+	
+	console.log (somarpares(array))
+    
+    
+  </script>
+   
+  </head>
+  <body>
+  1. transformar o array passado em somarpares em variavel e passar para os 2 metados
+  2. na segunda chamada soma pares o array deve ter 3 alementos a mais: 10, 12, 13. utilizar
+  o metodo push do array
+  3. os valores somados são: 12
+  4. ter um campo texto para clicar no botão e ele some
+  </body>
+
+
+
+</html>
+
+ 
+  </script>
+   
+  </head>
+  <body>
+   
+  </body>
+
+
+
+</html>
