@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script> 
+function identificarletras(letras){
+            var vogais= ["a", "e", "i", "o", "u"]
+             var contador=0
+
+        for (var letra of letras) {
+             
+             
+            
+            if (vogais.includes(letra)) {
+                 
+                
+                contador++   
+                
+            }
+            
+          
+        }
+            return contador
+    }
+    
+ 
+    var letras= ["a","b","c","d","e","f","g","h", "i"];
+    const resultado = identificarletras (letras);
+  console.log (resultado)
+   
+    
+     </script>
+   
+  </head>
+  <body>
+  
+  
+    
+  </body>
+
+
+
+</html>
+
+ 
+  </script>
+   
+  </head>
+  <body>
+  
+  </body>
+
+
+
+</html>
