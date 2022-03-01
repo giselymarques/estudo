@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script> 
+  
+ 
+       for (contador=0; contador<11; contador++){
+                console.log("8" + "x" + contador + "=" + contador * 8 )
+  
+        }
+  
+  
+ 
+  
+  
+  
+  
+  </script>
+   
+  </head>
+  <body>
+  
+ 
+  </body>
+
+
+
+</html>
+

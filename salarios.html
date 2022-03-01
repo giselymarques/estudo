@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script> 
+function aumentarSalario (x){
+var novoSalario
+
+if ( x < 280) {
+
+ novoSalario= (x * 20)/100 + x
+}
+
+ else if ( x > 280 && x < 700) {
+
+ novoSalario= (x * 15)/100 + x
+}
+
+else if ( x > 700 && x < 1500) {
+
+ novoSalario= (x * 10)/100 + x
+}
+
+
+return novoSalario
+}
+
+
+
+console.log ("o novo salario é " + aumentarSalario(170))
+console.log ("o novo salario é " +aumentarSalario(281))
+console.log ("o novo salario é " + aumentarSalario(702))
+console.log ("o novo salario é " + aumentarSalario(1200))
+console.log ("o novo salario é " + aumentarSalario(900))
+
+
+
+</script>
+   
+  </head>
+  <body>
+  
+  
+    
+  </body>
+
+
+
+</html>
+
+ 
+  
+  
