@@ -1,0 +1,27 @@
+ function formatacpf (cpf){
+ 		var contador=0 
+ 		var cpfFormatado= ''
+ 
+ 		if (cpf.length!==11){   
+    			 return 'não é um cpf'     
+ 		}
+ 
+ 		while (contador < cpf.length) {
+ 		    var num= cpf [contador]
+    			cpfFormatado = cpfFormatado + num 
+   			if (contador===2 || contador===5 ) {
+      				 cpfFormatado= cpfFormatado +'.'  
+   			 }
+    			 if (contador===8 ) {
+     				  cpfFormatado= cpfFormatado +'-'  
+   			 }
+    
+     			contador++
+		 }
+		return cpfFormatado
+
+	 }
+	                         0123456789
+	 console.log(formatacpf('23456789023'))
+     console.log(formatacpf('10769356000148'))
+
