@@ -2,8 +2,8 @@
 <html lang="pt-br">
   <head>
   <script> 
-	window.onload = function(){
-        	function somarpares (array){
+  
+      function somarpares (array){
         
        	        	var contador=0
 			var somapares= 0 
@@ -18,17 +18,23 @@
 	    		return somapares
 		}  
 	
+  
+  
+  
+	window.onload = function(){
+        	
+        	
+        	function resultado () {
 		var array= [1, 2, 3, 4, 5, 6] 
-	
-		console.log (somarpares(array))
-	
 		array.push(10,12,13)
-	
-		console.log (somarpares(array))
-	
+		
+		 const salariostr= document.getElementById("input_salario").value 
 		document.getElementById("label_id3").innerText = somarpares(array);	
+		}
 			
 		}   
+		
+		
     
   </script>
    
@@ -37,8 +43,8 @@
   
   
       <label id="label_id3" for="User">teste</label><br>
-      <input type="text" id="name" />
-     <button onclick="somapares">Clique aqui!</button>
+       <input type=number id=input_salario name=number required>
+       <button onclick=" resultado()">Enviar</button><br>
      
   </body>
 
@@ -47,13 +53,4 @@
 </html>
 
  
-  </script>
-   
-  </head>
-  <body>
-  
-  </body>
-
-
-
-</html>
+ 

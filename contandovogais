@@ -23,11 +23,19 @@ function identificarletras(letras){
     }
     
  
-    var letras= ["a","b","c","d","e","f","g","h", "i"];
-    const resultado = identificarletras (letras);
-  console.log (resultado)
+ 
+ 
+     function calcular (){
+	
+   	 var letras= document.getElementById("input_contador").value 
+    	const resultado = identificarletras (letras);
+  
+         document.getElementById("label_percentual").innerText = resultado
+  
+  
+  }
    
-    
+   	
      </script>
    
   </head>
@@ -37,7 +45,10 @@ function identificarletras(letras){
     
   </body>
 
-
+   
+     <label id="label_salario" for="User">informe o salario atual</label>
+    <input type="text" id=input_contador name="text" required>
+   <button onclick="calcular()">Enviar</button><br>
 
 </html>
 

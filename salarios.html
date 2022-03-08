@@ -2,45 +2,75 @@
 <html lang="pt-br">
   <head>
   <script> 
-function aumentarSalario (x){
-var novoSalario
+        function aumentarSalario (salario){
+		var novoSalario
+		novoSalario= (salario * getPercentual (salario) )/100 + salario
+		return novoSalario
+	}
+	
+	function getPercentual (salario){
+		var percentual
+		if ( salario < 280) {
 
-if ( x < 280) {
+			percentual= 20
+		}
+	 	else if ( salario > 280 && salario < 700) {
 
- novoSalario= (x * 20)/100 + x
-}
+			percentual= 15
+		}
+		else if ( salario > 700 ) {
 
- else if ( x > 280 && x < 700) {
+			 percentual= 10
+		}
+		return percentual
+	}
+	
+	function getaumento (salario){
+	         var valorDoaumento
 
- novoSalario= (x * 15)/100 + x
-}
+		  valorDoaumento= aumentarSalario (salario) - salario
+                  
+                  var total= valorDoaumento.toFixed(2)
+			return valorDoaumento
+	}
+	 
+	function calcular (){
+	  	 const salariostr= document.getElementById("input_salario").value 
+	  	 let salario = 0
+	  	 if (salariostr !== "") {	  	 
+	  	 
+	  	       salario= parseInt(salariostr)
+	  	 }
+	  	 const percentual= getPercentual (salario)
+		 const aumentoSalarial= aumentarSalario(salario)
+		 const aumento= getaumento (salario)
+		document.getElementById("label_salario").innerText = "Salario antes do reajuste é : " + salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+		document.getElementById("label_percentual").innerText = "O percentual de aumento aplicado é: "+ percentual +"%"
+		document.getElementById("label_salarioatual").innerText = "Novo salario apos o aumento é: " + aumentoSalarial.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) 
+		document.getElementById("label_aumento").innerText = "O valor do aumento é : "+ aumento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) 	
+	}
 
-else if ( x > 700 && x < 1500) {
-
- novoSalario= (x * 10)/100 + x
-}
-
-
-return novoSalario
-}
-
-
-
-console.log ("o novo salario é " + aumentarSalario(170))
-console.log ("o novo salario é " +aumentarSalario(281))
-console.log ("o novo salario é " + aumentarSalario(702))
-console.log ("o novo salario é " + aumentarSalario(1200))
-console.log ("o novo salario é " + aumentarSalario(900))
-
-
-
+ 	
 </script>
    
   </head>
   <body>
   
   
-    
+  
+     <label id="label_salario" for="User">informe o salario atual</label>
+    <input type=number id=input_salario name=number required>
+   <button onclick="calcular()">Enviar</button><br>
+
+    <label id="label_percentual" for="User"></label><br>
+    <label id="label_aumento" for="User"></label><br>  
+  <label id="label_salarioatual" for="User"></label><br>
+ 
+ 
+  
+  
+  
+ 
   </body>
 
 
@@ -48,5 +78,6 @@ console.log ("o novo salario é " + aumentarSalario(900))
 </html>
 
  
+  
   
   

@@ -3,22 +3,47 @@
   <head>
   <script> 
 
-function avaliarAluno (x,y) {
+
+var notasMaterias= 0
+
+
+	function avaliarAluno () 
+    var resultado    
+    var nota= document.getElementById("input_nota").value 
+   nota= parseInt(nota) 
     
-    var resultado
-    if (( x + y)/2 <= 6) { resultado= "reprovado"}
-    else { resultado= "aprovado"  }
+    if (nota > 6) { resultado= "aprovado"}
     
-    return resultado;
+    else if (nota <= 6 && nota >= 2)
+    { resultado= "recuperacao"  }
+    
+  else if (nota < 2)
+    { resultado= "reprovado" }
+    
+     else if (isNaN(nota))
+    { resultado= "não há valor digitado" }
+    
+   
+    document.getElementById("label_nota").innerText = resultado
+     document.getElementById("label_notaPor").innerText = NotaDePortugues
+     document.getElementById("label_notaMat").innerText = resultado
+    
+    
 }
 
-console.log (avaliarAluno(6,6))
+
 
 </script>
    
   </head>
   <body>
   
+   <label id="label_nota" for="User">informe sua média</label><br>
+   <label id="label_notaPor" for="User">informe sua Nota de Português</label><br>
+    <label id="label_notaMat" for="User">informe sua Nota de Matemática</label>
+    
+    <input type=text id=input_nota name=text required>
+   <button onclick="avaliarAluno ()">Enviar</button><br>
   
     
   </body>
@@ -28,13 +53,4 @@ console.log (avaliarAluno(6,6))
 </html>
 
  
-  </script>
-   
-  </head>
-  <body>
   
-  </body>
-
-
-
-</html>
