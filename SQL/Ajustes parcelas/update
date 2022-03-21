@@ -1,0 +1,17 @@
+
+//updata para igualar o valor do amount com amount_open
+
+  update contrato
+set amount_open= 200
+where parcela= 4 and numero_do_contrato=1 or parcela= 4 and numero_do_contrato=3
+or parcela= 4 and numero_do_contrato=2
+
+update para inativar as parcelas antigas 
+
+update contrato
+set active = false
+where numero_do_contrato = 3 and parcela <= 9
+
+
+
+
