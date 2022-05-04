@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <style>
+       body {color:
+white; background-color: black;widht 300px, padding: 20px;margin: 15px 50px 25px;}
+p, h3 {text-align: center}
+img{
+ display: block;
+ margin: 0px auto;
+}
+  
+   </style>
+
+
+
+
+  <script> 
+       
+	
+	
+</script>
+   
+  </head>
+  <body>
+  
+    <p>
+                <h3> Signo de Leão </h3>
+      Os leoninos são vaidosos e confiantes.
+      Sem dúvida, por serem regidos pelo Sol, o nosso astro rei!
+      
+          Características positivas dos leoninos: inteligentes e corajosos, são líderes natos. 
+          Por outro lado, são expressivos e determinados: quando colocam algo na mente, pode ter certeza que
+           vão até o fim para conquistá-la;
+          Características negativas dos leoninos: têm a personalidade muito forte, podendo se 
+          tornar ambiciosos, mandões ou convencidos demais.<br>
+
+
+          <br><br><img src="leao.jpg" width="400" height="300"/>
+    </p>
+   
+
+  </body>
+
+
+
+</html>
+
+ 
+  

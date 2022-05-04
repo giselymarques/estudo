@@ -1,0 +1,57 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+       <style>
+           body {color:
+    white; background-color: black;widht 300px, padding: 20px;}
+    p, h3 {text-align: center}
+    img{
+ display: block;
+ margin: 0px auto;
+}
+  
+      
+       </style>
+    
+    
+  
+      </head>
+      <body>
+      
+        <p>
+    
+                 <h3> Signo de Peixes  </h3>
+    
+            Emocionais e espiritualizados, esses são os piscianos.
+
+            Características positivas dos piscianos: ouvintes natos, são confiáveis, intuitivos, prestativos e
+             preocupados com os demais.
+            São adaptáveis e simpáticos, os tornando bem sociáveis.
+            
+            Características negativas dos piscianos: a sensibilidade aflorada pode os tornar emocionais demais,
+             tendendo para a depressão, os tornando muito temperamentais e rancorosos.
+             São avoados, escapistas da realidade e por confiarem muito nos outros também costumam ser 
+             indecisos e inocentes.
+
+             <br><br><img src="peixes.jpg" width="400" height="300"/>
+
+             </p>
+      </body>
+    
+    
+    
+    </html>
+    
+     
+      
+
+
+  </body>
+
+
+
+</html>
+
+ 
+  

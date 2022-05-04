@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <style>
+       body {color:
+white; background-color: black;widht 300px, padding: 20px; margin: 15px 50px 25px; }
+   p, h3 {text-align: center}
+   img{
+ display: block;
+ margin: 0px auto;
+}
+   
+   </style>
+
+
+
+
+  <script> 
+       
+	
+	
+</script>
+   
+  </head>
+  <body>
+    <h3> Signo de Áries</h3>
+     <p>
+
+      Áries é um signo que respeita a individualidade de cada um e espera uma atitude recíproca do próximo.Não que seja um problema liderar, pelo contrário, você sabe mandar, mas é que para você é muito óbvio que cada um pode fazer o que quiser, na hora que quiser.Portanto, se ficam te cobrando e exigindo, é quase como se estivessem pedindo para você ficar nervosa. Afinal,
+        você precisa se sentir livre para se movimentar e também para curtir uma boa pausa quando quer. <br>
+        
+        <br><br><img src="aries.jpg" width="400" height="300"/>
+  
+     </p>
+    
+    
+   
+   
+  
+  </body>
+
+
+
+</html>
+
+ 
+  

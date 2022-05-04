@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <style>
+       body {color:
+white; background-color: black;widht 300px, padding: 20px;margin: 15px 50px 25px;}
+p, h3 {text-align:center}
+img{
+ display: block;
+ margin: 0px auto;
+}
+   </style>
+
+
+
+
+  <script> 
+       
+	
+	
+</script>
+   
+  </head>
+  <body>
+  
+    <p>
+
+      <h3> Signo de Gêmeos </h3>
+      Os geminianos são extrovertidos e amigões!
+      Ainda, são regidos pelo planeta Mercúrio, o que traz grande capacidade de adaptação a eles.
+          Características positivas dos geminianos: animados e comunicativos, eles tem a mente aberta
+           e são muito espertos;
+          Características negativas dos geminianos: podem oscilar muito, tonando-se indecisos, inconstantes,
+           ansiosos e ao mesmo tempo evasivos;
+      Dessa forma, o signo de Gêmeos é o mais comunicativo do zodíaco.<br>
+
+      <br><br><img src="gemeos.jpg" width="400" height="300"/>
+  
+    </p>
+   
+
+  </body>
+
+
+
+</html>
+
+ 
+  

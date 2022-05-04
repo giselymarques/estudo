@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <style>
+       body {color:
+#ffffff; background-color: black;widht 300px, padding: 20px;margin: 15px 50px 25px;}
+p, h3 {text-align: center}
+img{
+ display: block;
+ margin: 0px auto;
+}
+
+
+
+   </style>
+
+
+
+
+  <script> 
+       
+	
+	
+</script>
+   
+  </head>
+  <body>
+  
+    <p>
+       <h3> Signo de Virgem</h3>
+      Organizados e analíticos: esses são os virginianos.
+
+      Características positivas dos virginianos: observação e eficiência são marcas do virginiano, 
+      que é bastante atencioso e sincero com os demais e está sempre resolvendo um problema:
+       seja seu ou dos outros.
+      Características negativas dos virginianos: ser sistemático torna o virginiano cheio de manias,
+       muito crítico e desconfiado. Também pode torná-los ansiosos e perfeccionistas demais.
+      
+
+      Virgem é o signo mais organizado do zodíaco.
+
+      <br><br><img src="virgem.jpg" width="400" height="300"/>
+
+
+
+    </p>
+   
+ 
+
+
+  </body>
+
+
+
+</html>
+
+ 
+  

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  
+  <style>
+  body {color:
+white; background-color: black;widht 300px, padding: 20px; margin: 15px 50px 25px;  }
+div {
+       display: flex;
+       justify-content: space-between;
+}
+
+button {margin: 10px 10px 10; text-align: left}
+
+#id2 {position: relative;
+left: 10x;}
+
+img{
+ display: block;
+ margin: 0px auto; border-radius: 50%;
+}
+
+
+  </style>
+  <script> 
+      function signo () {
+      var ComponenteOperacao= document.getElementById("operacoes").value
+      var resultado
+      if (ComponenteOperacao=== "21 de março a 20 de abril") {
+             resultado= "Áries"
+      }
+       
+      if (ComponenteOperacao=== "21 de abril a 20 de maio") {
+             resultado= "Touro" 
+      }
+       
+       if (ComponenteOperacao=== "21 de maio a 20 de junho") {
+             resultado= "Gêmeos"
+      }
+       if (ComponenteOperacao=== "21 de junho a 22 de julho") {
+             resultado= "Câncer" 
+      }
+       if (ComponenteOperacao=== "23 de julho a 22 de agosto") {
+             resultado= "Leão"
+      }
+       if (ComponenteOperacao=== "23 de agosto a 22 de setembro") {
+             resultado= "Virgem"
+      }
+       if (ComponenteOperacao=== "23 de setembro a 22 de outubro") {
+             resultado= "Libra"
+      }
+       if (ComponenteOperacao=== "23 de outubro a 21 de Novembro") {
+             resultado= "Escorpião"  
+      }
+       if (ComponenteOperacao=== "22 de Novembro a 21 de dezembro") {
+             resultado= "Sagitário"
+      }
+      
+      if (ComponenteOperacao=== "22 de Dezembro a 20 de Janeiro") {
+             resultado= "Capricornio"
+      }
+      if (ComponenteOperacao=== "21 de Janeiro a 18 de Fevereiro") {
+             resultado= "Aquario"
+      }
+      
+      if (ComponenteOperacao=== "19 de Fevereiro a 20 de Março") {
+             resultado= "Peixes"
+      }
+       
+              document.getElementById("conteudo").innerText = resultado
+      
+      }
+     
+ 	
+</script>
+   
+  </head>
+  <body>
+
+   <fieldset>
+
+          <legend> Características dos signos</legend>
+          <div id= "div1">
+        <a href="Áries">Áries</a><br>          
+        <a href="Touro">Touro</a><br>
+        <a href="Gêmeos">Gêmeos</a><br>
+          </div>
+
+         <div id= "div2">
+              <a href="Câncer">Câncer</a><br>
+              <a href="Leão">Leão</a><br>
+              <a href="Virgem">Virgem</a><br>              
+         </div>
+
+         <div  id= "div3">
+              <a href="Libra">Libra</a><br>
+              <a href="Escorpião">Escorpião</a><br>
+              <a href="Sagitário">Sagitário</a><br>    
+         </div>
+
+         <div id= "div4">
+              <a href="Capricórnio">Capricórnio</a><br>   
+              <a href="Aquario">Aquário</a><br>          
+              <a href="Peixes">Peixes</a><br>
+            
+         </div>
+       
+      
+   </fieldset>
+
+  
+  
+   <p>
+
+       <h3>  Entre quais datas você nasceu? <h3>
+             
+              <select class="botao" id="operacoes" name="operacoes">
+             <option value="21 de março a 20 de abril">21 de março a 20 de abril</option>
+             <option value="21 de abril a 20 de maio" selected>21 de abril a 20 de maio</option>
+             <option value="21 de maio a 20 de junho">21 de maio a 20 de junho</option>
+             <option value="21 de junho a 22 de julho">21 de junho a 22 de julho</option>
+               <option value="23 de julho a 22 de agosto">23 de julho a 22 de agosto</option>
+              <option value="23 de agosto a 22 de setembro">23 de agosto a 22 de setembro</option>
+              <option value="23 de setembro a 22 de outubro">23 de setembro a 22 de outubro</option>
+              <option value="23 de outubro a 21 de Novembro">23 de outubro a 21 de Novembro</option> 
+              <option value="23 de outubro a 21 de Novembro">23 de outubro a 21 de Novembro</option>  
+             <option value="22 de Novembro a 21 de dezembro">22 de Novembro a 21 de dezembro</option> 
+             <option value="22 de Dezembro a 20 de Janeiro">22 de Dezembro a 20 de Janeiro</option>   
+            <option value="21 de Janeiro a 18 de Fevereiro ">21 de Janeiro a 18 de Fevereiro </option> 
+            <option value="22 de Novembro a 20 de janeiro">19 de Fevereiro a 20 de Março</option>
+       </select>
+   </p> 
+
+     <div id= "id2">
+
+       <button class=botao onclick="signo()">Descubra qual o seu Signo</button> 
+
+       </div> <br>
+       <label id="conteudo" for="User">resultado</label>  
+       
+   
+
+      <img src="Signos.jpg" width="400" height="300"; text-align: center/>
+   
+       
+     
+
+  </body>
+
+
+
+</html>
+
+ 
+  
+  
+  

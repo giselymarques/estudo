@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <style>
+       body {color:
+white; background-color: black;widht 300px, padding: 20px;margin: 15px 50px 25px;}
+
+p, h3 {text-align: center}
+img{
+ display: block;
+ margin: 0px auto;
+}
+
+  
+   </style>
+
+
+
+
+  <script> 
+       
+	
+	
+</script>
+   
+  </head>
+  <body>
+  
+    <p>
+
+      <h3> Signo de Touro </h3>
+    Os taurinos são esforçados e práticos! 
+    Além disso, são regidos pelo planeta Vênus, e por isso admiram muito a beleza das coisas.
+    
+        Características positivas dos taurinos: cuidadoso com tudo e com todos, é paciente e produtivo.
+         Desse modo, são pessoas em que se podem confiar e costumam ser muito fiéis;
+        Características negativas dos taurinos: a teimosia é característica nata de um taurino. Visto que
+         são muito persistentes e obstinado, querem cuidar de tudo e podem se mostrar centralizadores, 
+         inflexíveis e materialistas;
+    Isto posto, o signo de Touro é o mais teimoso do zodíaco!
+    
+    Além destas características, leia sobre a Constelação de Touro, que deu origem a esse signo.<br>
+
+           <br><br><img src="touro.jpg" width="400" height="300"/>
+
+
+
+    </p>
+
+    
+  </body>
+
+
+
+</html>
+
+ 
+  

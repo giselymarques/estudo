@@ -1,0 +1,53 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+       <style>
+           body {color:
+    white; background-color: black;widht 300px, padding: 20px;margin: 15px 50px 25px;}
+    p, h3 {text-align: center}
+
+    img{
+ display: block;
+ margin: 0px auto;
+}
+       </style>
+    
+    
+    
+    
+      <script>     
+        
+    </script>
+       
+      </head>
+      <body> 
+      
+        <p>
+
+            <h3>Signo de Escorpião</h3>
+          Atraente e intenso: esse é o escorpiano.
+
+            Características positivas dos escorpianos: de uma auto-confiança invejável 
+            (a não ser pelos leoninos…rs), 
+            têm muita intuição e um instinto protetor maravilhoso. São dedicados e apaixonados.
+            Características negativas dos escorpianos: sua boa memória, ciúmes e às vezes obsessão
+             fazem com que o nunca esqueçam do que lhe fizeram, se tornando vingativos e rancorosos.<br>
+    
+            <br><br><img src="escorpiao.jpg";width="400" height="300"/>
+          </p>    
+           
+       
+      </body>
+    
+    
+    
+    </html>
+    
+     
+      
+
+
+ 
+ 
+  
