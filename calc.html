@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script>
+    function somar() {
+      var primeiroNumero = document.getElementById("input_soma1").value
+      primeiroNumero = parseInt(primeiroNumero)
+      var SegundoNumero = document.getElementById("input_soma2").value
+      SegundoNumero = parseInt(SegundoNumero)
+
+      var soma = primeiroNumero + SegundoNumero
+
+      document.getElementById("label_soma").innerText = soma
+    }
+
+    function subtrair() {
+      var primeiroNumero = document.getElementById("input_subtrair1").value
+      primeiroNumero = parseInt(primeiroNumero)
+      var SegundoNumero = document.getElementById("input_subtrair2").value
+      SegundoNumero = parseInt(SegundoNumero)
+
+      var subtrai = primeiroNumero - SegundoNumero
+
+      document.getElementById("label_subtracao").innerText = subtrai
+    }
+
+    function dividir() {
+      var primeiroNumero = document.getElementById("input_divisao1").value
+      primeiroNumero = parseInt(primeiroNumero)
+      var numeroDois = document.getElementById("input_divisao2").value
+      numeroDois = parseInt(numeroDois)
+
+      var divide = primeiroNumero / numeroDois
+
+      document.getElementById("label_divisao").innerText = divide
+
+    }
+
+    function multiplicar() {
+      var primeiroNumero = document.getElementById("input_multiplicar1").value
+      primeiroNumero = parseInt(primeiroNumero)
+      var SegundoNumero = document.getElementById("input_multiplicar2").value
+      SegundoNumero = parseInt(SegundoNumero)
+
+
+      var multiplica = primeiroNumero * SegundoNumero
+
+
+      document.getElementById("label_multiplicacao").innerText = multiplica
+
+    }
+
+
+
+  </script>
+
+</head>
+
+<body>
+  <h><b> Calculadora</b></h><br><br><br>
+  <label id="label_soma" for="User">Somar</label>
+  <input type=number id=input_soma1 name=number required><br><br>
+  <input type=number id=input_soma2 name=number required><br>
+  <button onclick="somar()">somar</button><br><br>
+
+  <label id="label_subtracao" for="User">Subtrair</label>
+  <input type=number id=input_subtrair1 name=number required><br>
+  <input type=number id=input_subtrair2 name=number required><br><br>
+  <button onclick="subtrair()">subtrair</button><br><br>
+
+  <label id="label_divisao" for="User">dividir</label>
+  <input type=number id=input_divisao1 name=number required><br>
+  <input type=number id=input_divisao2 name=number required><br><br>
+  <button onclick="dividir()">dividir</button><br><br>
+
+  <label id="label_multiplicacao" for="User">multiplicar</label>
+  <input type=number id=input_multiplicar1 name=number required><br>
+  <input type=number id=input_multiplicar2 name=number required><br>
+  <button onclick="multiplicar()">multiplicar</button><br>
+
+
+
+
+</body>
+
+</html>

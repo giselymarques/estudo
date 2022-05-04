@@ -1,44 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+  <style>
+ body {text-align:center; background-color:lightblue; color: black}
+ button {background-color:black; color: white}
+ input {background-color:black; color: white; text-align:center}
+ legend {text-align:center;font-style: italic; font-size: 25px}
+ label {font-style: italic; font-size: 20px }
+  </style>
+  
   <script> 
-  
-  
-         
-	function avaliarAluno () { 
-	 var nota= document.getElementById("input_nota").value 
-       	 nota= parseInt(nota)      	 
-          var resultado
        
-   	 if (nota > 6) { resultado= "aprovado"}
+	function avaliarAluno () { 
+	         var Portugues= document.getElementById("input_portugues").value 
+      	 	 Portugues= parseInt(Portugues) 
+      	 	 var Matematica= document.getElementById("input_matematica").value 
+      	 	 Matematica= parseInt(Matematica)  
+      	 	  var História= document.getElementById("input_Historia").value 
+      	 	 História= parseInt(História) 
+      	 	 var Geografia= document.getElementById("input_Geografia").value 
+      	 	 Geografia= parseInt(Geografia)      	 
+      		    var media= (Portugues + Matematica+História+Geografia)/4
+      		    var resultado
+       
+   		 if (media > 6) { resultado= "Parabéns! você foi aprovado"}
     
-   	 else if (nota <= 6 && nota >= 2)
-  	  { resultado= "recuperacao"  }
+   			 else if (media <= 6 && media >= 2)
+  			  { resultado= "Recuperação, precisa estudar mais"  }
     
-	  else if (nota < 2)
- 	   { resultado= "reprovado" }
+	 		 else if (media < 2)
+ 	  		 { resultado= "Reprovado" }
     
- 	    else if (isNaN(nota))
- 	   { resultado= "não há valor digitado" }
+ 	 		   else if (isNaN(media))
+ 			   { resultado= "Não há valor digitado" }
     
     
-        document.getElementById("label_nota").innerText = resultado
+     		   document.getElementById("label_nota").innerText = resultado
   
-	}
+		}
+		
+		function avaliarAluno2 () { 
+	         var matPrimeiroBimestre= document.getElementById("matPrimeiroBimestre").value 
+      	 	 matPrimeiroBimestre= parseInt(matPrimeiroBimestre) 
+      	 	 var matSegundoBimestre= document.getElementById("matSegundoBimestre").value 
+      	 	 matSegundoBimestre= parseInt(matSegundoBimestre)  
+      	 	  var matTerceiroBimestre= document.getElementById("matTerceiroBimestre").value 
+      	 	 matTerceiroBimestre= parseInt(matTerceiroBimestre) 
+      	 	 var matQuartoBimestre= document.getElementById("matQuartoBimestre").value 
+      	 	 matQuartoBimestre= parseInt(matQuartoBimestre)      	 
+      		    var media= (matPrimeiroBimestre + matSegundoBimestre+matTerceiroBimestre+matQuartoBimestre)/4
+      		    var resultado
+       
+   		 if (media > 6) { resultado= "Parabéns! você foi aprovado"}
+    
+   			 else if (media <= 6 && media >= 2)
+  			  { resultado= "Recuperação, precisa estudar mais"  }
+    
+	 		 else if (media < 2)
+ 	  		 { resultado= "Reprovado" }
+    
+ 	 		   else if (isNaN(media))
+ 			   { resultado= "Não há valor digitado" }
+    
+    
+     		   document.getElementById("label_nota2").innerText = resultado
+  
+		}
+		
+		
+		function avaliarAluno3 () { 
+	         var hisPrimeiroBimestre= document.getElementById("hisPrimeiroBimestre").value 
+      	 	 hisPrimeiroBimestre= parseInt(hisPrimeiroBimestre) 
+      	 	 var hisSegundoBimestre= document.getElementById("hisSegundoBimestre").value 
+      	 	 hisSegundoBimestre= parseInt(hisSegundoBimestre)  
+      	 	  var hisTerceiroBimestre= document.getElementById("hisTerceiroBimestre").value 
+      	 	 hisTerceiroBimestre= parseInt(hisTerceiroBimestre) 
+      	 	 var hisQuartoBimestre= document.getElementById("hisQuartoBimestre").value 
+      	 	 hisQuartoBimestre= parseInt(hisQuartoBimestre)      	 
+      		    var media= (hisPrimeiroBimestre + hisSegundoBimestre+hisTerceiroBimestre+hisQuartoBimestre)/4
+      		    var resultado
+       
+   		 if (media > 6) { resultado= "Parabéns! você foi aprovado"}
+    
+   			 else if (media <= 6 && media >= 2)
+  			  { resultado= "Recuperação, precisa estudar mais"  }
+    
+	 		 else if (media < 2)
+ 	  		 { resultado= "Reprovado" }
+    
+ 	 		   else if (isNaN(media))
+ 			   { resultado= "Não há valor digitado" }
+    
+    
+     		   document.getElementById("label_nota3").innerText = resultado
+  
+		}
+		
+		function avaliarAluno4 () { 
+	         var geoPrimeiroBimestre= document.getElementById("geoPrimeiroBimestre").value 
+      	 	  geoPrimeiroBimestre= parseInt( geoPrimeiroBimestre) 
+      	 	 var  geoSegundoBimestre= document.getElementById("geoSegundoBimestre").value 
+      	 	geoSegundoBimestre= parseInt(geoSegundoBimestre)  
+      	 	  var geoTerceiroBimestre= document.getElementById("geoTerceiroBimestre").value 
+      	 	 geoTerceiroBimestre= parseInt(geoTerceiroBimestre) 
+      	 	 var geoQuartoBimestre= document.getElementById("geoQuartoBimestre").value 
+      	 	 geoQuartoBimestre= parseInt(geoQuartoBimestre)      	 
+      		    var media= (geoPrimeiroBimestre + geoSegundoBimestre+geoTerceiroBimestre+geoQuartoBimestre)/4
+      		    var resultado
+       
+   		 if (media > 6) { resultado= "Parabéns! você foi aprovado"}
+    
+   			 else if (media <= 6 && media >= 2)
+  			  { resultado= "Recuperação, precisa estudar mais"  }
+    
+	 		 else if (media < 2)
+ 	  		 { resultado= "Reprovado" }
+    
+ 	 		   else if (isNaN(media))
+ 			   { resultado= "Não há valor digitado" }
+    
+    
+     		   document.getElementById("label_nota4").innerText = resultado
+  
+		}
 	
-	function calcular
-      
+	
+	
+	
 </script>
    
   </head>
   <body>
   
-
+<div id= "div1">
+   <fieldset>
+   <legend> Informe sua Nota de Português </legend>
   
-   <label id="label_nota" for="User">informe sua média</label><br>
-    <input type=number id=input_nota name=number required>
-   <button onclick="avaliarAluno ()">Enviar</button><br>
+     Nota do 1º bimestre <br>
+    <input type=number id=input_portugues name=number required><br>
+     Nota do 2º bimestre <br>
+    <input type=number id=input_matematica name=number required><br>
+    Nota do 3º bimestre<br>
+    <input type=number id=input_Historia name=number required><br>
+   Nota do 4º bimestre<br>
+    <input type=number id=input_Geografia name=number required><br>
+   <button onclick="avaliarAluno ()">Enviar</button><br><br>
+    <label id="label_nota" for="User">Resultado</label>
+ 
+   </fieldset>
+   </div>
   
+  <div>
+   <fieldset>
+   
+    <legend> Informe sua Nota de Matemática </legend>
+  
+     Nota do 1º bimestre <br>
+    <input type=number id=matPrimeiroBimestre name=number required><br>
+     Nota do 2º bimestre <br>
+    <input type=number id=matSegundoBimestre name=number required><br>
+    Nota do 3º bimestre<br>
+    <input type=number id=matTerceiroBimestre name=number required><br>
+   Nota do 4º bimestre<br>
+    <input type=number id=matQuartoBimestre name=number required><br>
+   <button onclick="avaliarAluno2 ()">Enviar</button><br><br>
+    <label id="label_nota2" for="User">Resultado</label>
+  
+  
+   </fieldset>
+  </div>
+     <fieldset>
+   
+    <legend> Informe sua Nota de História </legend>
+  
+     Nota do 1º bimestre <br>
+    <input type=number id=hisPrimeiroBimestre name=number required><br>
+     Nota do 2º bimestre <br>
+    <input type=number id=hisSegundoBimestre name=number required><br>
+    Nota do 3º bimestre<br>
+    <input type=number id=hisTerceiroBimestre name=number required><br>
+   Nota do 4º bimestre<br>
+    <input type=number id=hisQuartoBimestre name=number required><br>
+   <button onclick="avaliarAluno3 ()">Enviar</button><br><br>
+    <label id="label_nota3" for="User">Resultado</label>
+  
+  
+   </fieldset>
+  <div>
+  
+  
+  </div>
+     <fieldset>
+   
+    <legend> Informe sua Nota de Geografica </legend>
+  
+     Nota do 1º bimestre <br>
+    <input type=number id=geoPrimeiroBimestre name=number required><br>
+     Nota do 2º bimestre <br>
+    <input type=number id=geoSegundoBimestre name=number required><br>
+    Nota do 3º bimestre<br>
+    <input type=number id=geoTerceiroBimestre name=number required><br>
+   Nota do 4º bimestre<br>
+    <input type=number id=geoQuartoBimestre name=number required><br>
+   <button onclick="avaliarAluno4 ()">Enviar</button><br><br>
+    <label id="label_nota4" for="User">Resultado</label>
+  
+  
+   </fieldset>
+  <div>
     
   </body>
 

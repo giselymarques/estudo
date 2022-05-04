@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script>
+	function formatacnpj (){
+	        var cnpj= document.getElementById("input2").value
+ 		var cnpjFormatado= ""
+               	var contador=0
+ 		
+ 
+ 		for (var num of cnpj) {
+    			cnpjFormatado = cnpjFormatado + num 
+   			if (contador===1 || contador===4 ) {
+      				 cnpjFormatado= cnpjFormatado +'.'  
+   			 }
+    			 if (contador===7 ) {
+     				  cnpjFormatado= cnpjFormatado +'/'  
+   			 }
+    
+   	 		 if (contador===11 ) {
+       				cnpjFormatado= cnpjFormatado +'-'  
+   			 }
+     			contador++
+		 }
+ 		
+       document.getElementById("label1").innerText = cnpjFormatado
+ 		}
+ 
+ 		
+</script>
+   
+  </head>
+
+
+  <body>
+
+     
+     <h1> CPF </h1>
+    
+    <input type=number id=input2 name=number required><br>
+      <button onclick="formatacnpj()">Calcular</button><br>
+   <label id="label1" for="User">resultado</label>  
+   
+
+   
+ 
+  
+   
+  </body>
+
+
+
+</html>
+
+ 
+ 
+
+ 
+  
+ 
+

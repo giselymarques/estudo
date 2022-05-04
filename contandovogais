@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+  
+  <style>
+  
+  
+body  {background-color: black; color: White
+}
+label { color: White
+}
+  
+  
+  </style>
   <script> 
-function identificarletras(letras){
+  
+ 
+		function identificarletras(){
+
+           
+            var input= document.getElementById("input_contador").value 
             var vogais= ["a", "e", "i", "o", "u"]
              var contador=0
+             var vagaisdoarray= ""
+             
 
-        for (var letra of letras) {
+        for (var letra of input) {
              
              
             
             if (vogais.includes(letra)) {
-                 
+                
                 
                 contador++   
-                
+             vagaisdoarray= vagaisdoarray + letra   
             }
             
           
         }
-            return contador
+            
+            
+              document.getElementById("label_").innerText = "As vogais são: " + vagaisdoarray
+  
+           
     }
     
  
  
  
-     function calcular (){
-	
-   	 var letras= document.getElementById("input_contador").value 
-    	const resultado = identificarletras (letras);
-  
-         document.getElementById("label_percentual").innerText = resultado
-  
-  
-  }
+    
    
    	
      </script>
@@ -45,10 +59,12 @@ function identificarletras(letras){
     
   </body>
 
-   
-     <label id="label_salario" for="User">informe o salario atual</label>
+      <div>
+     <label id="label_" for="User">Letras</label>
     <input type="text" id=input_contador name="text" required>
-   <button onclick="calcular()">Enviar</button><br>
+   <button onclick="identificarletras()">Enviar</button><br>
+   
+   </div>
 
 </html>
 
